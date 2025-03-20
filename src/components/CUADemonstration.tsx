@@ -69,7 +69,7 @@ const CUADemonstration = () => {
                     {cuaSteps[step].icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-2">{cuaSteps[step].title}</h3>
-                  <p className="max-w-md text-gray-600">{cuaSteps[step].description}</p>
+                  <p className="max-w-md text-black dark:text-white">{cuaSteps[step].description}</p>
                 </motion.div>
               </div>
             </div>

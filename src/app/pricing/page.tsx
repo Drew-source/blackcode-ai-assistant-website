@@ -99,12 +99,12 @@ export default function PricingPage() {
                 }`}
               >
                 <div className={`p-6 ${plan.highlight ? 'bg-secondary-orange text-white' : 'bg-white'}`}>
-                  <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
+                  <h2 className="text-2xl font-bold mb-2 text-black dark:text-white">{plan.name}</h2>
                   <div className="flex items-end">
-                    <span className="text-4xl font-bold">{plan.price}</span>
-                    <span className="text-sm ml-2 mb-1">/ {plan.period}</span>
+                    <span className="text-4xl font-bold text-black dark:text-white">{plan.price}</span>
+                    <span className="text-sm ml-2 mb-1 text-black dark:text-white">/ {plan.period}</span>
                   </div>
-                  <p className={`mt-3 ${plan.highlight ? 'text-white opacity-90' : 'text-gray-600'}`}>
+                  <p className={`mt-3 ${plan.highlight ? 'text-white opacity-90' : 'text-black dark:text-white'}`}>
                     {plan.description}
                   </p>
                 </div>
@@ -116,9 +116,9 @@ export default function PricingPage() {
                         {feature.included ? (
                           <FaCheck className="text-green-500 mr-3 flex-shrink-0" />
                         ) : (
-                          <FaTimes className="text-ui-muted mr-3 flex-shrink-0" />
+                          <FaTimes className="text-black/70 dark:text-white/70 mr-3 flex-shrink-0" />
                         )}
-                        <span className={feature.included ? 'text-body' : 'text-ui-muted'}>
+                        <span className={feature.included ? 'text-black dark:text-white' : 'text-black/70 dark:text-white/70'}>
                           {feature.name}
                         </span>
                       </li>
@@ -143,47 +143,47 @@ export default function PricingPage() {
       {/* FAQs Section */}
       <section className="py-16 bg-neutral-light">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-black dark:text-white">Frequently Asked Questions</h2>
           
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-primary-blue">Can I change plans later?</h3>
-              <p className="text-gray-600">
+              <p className="text-black dark:text-white">
                 Yes, you can upgrade or downgrade your plan at any time. Changes will take effect on your next billing cycle.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-primary-blue">What payment methods are accepted?</h3>
-              <p className="text-gray-600">
+              <p className="text-black dark:text-white">
                 We accept all major credit cards, PayPal, and for Enterprise plans, we also accept wire transfers and purchase orders.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-primary-blue">Is there a free trial?</h3>
-              <p className="text-gray-600">
+              <p className="text-black dark:text-white">
                 Yes, you can try the Professional plan for 14 days before being charged. No credit card required for the trial.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-primary-blue">Do you offer refunds?</h3>
-              <p className="text-gray-600">
+              <p className="text-black dark:text-white">
                 We offer a 30-day money-back guarantee for all new Professional plan subscriptions.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-primary-blue">What's included in Full MCP Access?</h3>
-              <p className="text-gray-600">
+              <p className="text-black dark:text-white">
                 Full MCP Access includes all 15+ Model Context Protocols, allowing the assistant to connect with all supported services and tools.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-primary-blue">What are CUA Actions?</h3>
-              <p className="text-gray-600">
+              <p className="text-black dark:text-white">
                 Computer Use Agent (CUA) actions are operations where the AI controls your computer interface. This includes clicks, typing, and other interactions.
               </p>
             </div>

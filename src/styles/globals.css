@@ -44,26 +44,45 @@
     @apply bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100 dark:border-dark-highlight;
   }
 
-  /* Text contrast styles */
-  /* Instead of overriding tailwind classes, create our own */
+  /* Text contrast styles with direct color values */
   .card p {
-    @apply text-gray-800 dark:text-gray-100;
+    color: #000 !important;
+  }
+  
+  .dark .card p {
+    color: #fff !important;
   }
 
   .text-heading {
-    @apply text-gray-900 dark:text-gray-100;
+    color: #000 !important;
+  }
+  
+  .dark .text-heading {
+    color: #fff !important;
   }
   
   .text-body {
-    @apply text-gray-800 dark:text-gray-100;
+    color: #000 !important;
+  }
+  
+  .dark .text-body {
+    color: #fff !important;
   }
   
   .text-muted {
-    @apply text-gray-700 dark:text-gray-200;
+    color: rgba(0, 0, 0, 0.8) !important;
+  }
+  
+  .dark .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
   }
   
   .text-ui-muted {
-    @apply text-gray-600 dark:text-gray-300;
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  .dark .text-ui-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
   }
 
   .emoji-bg {

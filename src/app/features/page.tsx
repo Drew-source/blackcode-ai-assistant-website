@@ -31,21 +31,21 @@ export default function FeaturesPage() {
                 <FaPlug />
               </div>
               <h2 className="text-2xl font-bold mb-4">Model Context Protocol (MCP)</h2>
-              <p className="mb-4">
+              <p className="mb-4" style={{color: '#000'}}>
                 MCPs are standardized connections between AI models and data sources/tools that expand the capabilities of the assistant.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>15+ specialized MCPs for different services</span>
+                  <span style={{color: '#000'}}>15+ specialized MCPs for different services</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Secure access with configurable permissions</span>
+                  <span style={{color: '#000'}}>Secure access with configurable permissions</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Standardized interface for all integrations</span>
+                  <span style={{color: '#000'}}>Standardized interface for all integrations</span>
                 </li>
               </ul>
               <div className="mt-6">

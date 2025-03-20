@@ -98,8 +98,8 @@ export default function Home() {
               <div className="emoji-bg bg-primary mb-4">
                 <FaPlug className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-heading">Model Context Protocol</h3>
-              <p className="text-body">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#000'}}>Model Context Protocol</h3>
+              <p style={{color: '#000'}}>
                 Connect AI to 15+ data sources and services with secure, standardized protocols. 🔌
               </p>
             </motion.div>
@@ -115,8 +115,8 @@ export default function Home() {
               <div className="emoji-bg bg-accent-purple mb-4">
                 <FaRobot className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-heading">Computer Use Agent</h3>
-              <p className="text-body">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#000'}}>Computer Use Agent</h3>
+              <p style={{color: '#000'}}>
                 Allow AI to control your computer interface with OpenAI's advanced CUA technology. 🖱️
               </p>
             </motion.div>
@@ -132,8 +132,8 @@ export default function Home() {
               <div className="emoji-bg bg-accent-green mb-4">
                 <FaBrain className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-heading">Multi-Provider AI</h3>
-              <p className="text-body">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#000'}}>Multi-Provider AI</h3>
+              <p style={{color: '#000'}}>
                 Leverage Claude, GPT, and ElevenLabs models for specialized capabilities. 🧠
               </p>
             </motion.div>
@@ -149,8 +149,8 @@ export default function Home() {
               <div className="emoji-bg bg-accent-pink mb-4">
                 <FaMicrophone className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-heading">Voice Interaction</h3>
-              <p className="text-body">
+              <h3 className="text-xl font-bold mb-3" style={{color: '#000'}}>Voice Interaction</h3>
+              <p style={{color: '#000'}}>
                 Communicate naturally with high-quality bidirectional voice capabilities. 🎙️
               </p>
             </motion.div>

@@ -95,10 +95,10 @@ const MCPDetail = ({ id, name, description, icon, features, permissions, useCase
                 {useCases.map((useCase, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg p-6">
                     <h3 className="text-lg font-bold mb-2">{useCase.title}</h3>
-                    <p className="text-gray-600 mb-4">{useCase.description}</p>
+                    <p style={{color: '#000'}} className="mb-4">{useCase.description}</p>
                     {useCase.image && (
                       <div className="rounded-md overflow-hidden bg-neutral-light h-40 flex items-center justify-center">
-                        <span className="text-sm text-gray-500">Screenshot: {useCase.title}</span>
+                        <span style={{color: '#000'}} className="text-sm">Screenshot: {useCase.title}</span>
                       </div>
                     )}
                   </div>
