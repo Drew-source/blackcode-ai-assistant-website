@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-inter bg-neutral-light text-neutral-dark dark:bg-dark-bg dark:text-dark-text;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+
+  /* Default to dark mode */
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    @apply dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white py-2 px-6 rounded-md hover:bg-opacity-90 transition duration-200 font-semibold;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-orange text-white py-2 px-6 rounded-md hover:bg-opacity-90 transition duration-200 font-semibold dark:bg-secondary dark:text-dark-bg;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100 dark:border-dark-highlight;
+  }
+
+  .emoji-bg {
+    @apply flex items-center justify-center w-12 h-12 rounded-full text-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent-purple;
+  }
+}
+
+/* Custom scrollbar for dark mode */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .dark ::-webkit-scrollbar-track {
+    background: theme('colors.dark.bg');
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: theme('colors.dark.highlight');
+    border-radius: 4px;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.primary.DEFAULT');
+  }
+} 
