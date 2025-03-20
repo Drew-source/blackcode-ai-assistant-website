@@ -66,8 +66,10 @@
     @apply text-gray-900 dark:text-gray-100;
   }
   
-  .text-gray-300, .text-gray-400 {
-    @apply text-gray-600 dark:text-gray-300;
+  /* Fix for circular dependency */
+  /* Instead of directly overriding the classes that create circular references */
+  .light-text-fix {
+    @apply text-gray-600 dark:text-gray-200;
   }
 
   .emoji-bg {
