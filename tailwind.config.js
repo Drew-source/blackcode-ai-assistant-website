@@ -36,6 +36,17 @@ module.exports = {
           purple: "#7C3AED",
           pink: "#F472B6",
           yellow: "#F59E0B",
+        },
+        // Semantic text colors with better organization
+        text: {
+          primary: "#000000", // Pure black for maximum contrast in light mode
+          secondary: "#333333", // Very dark gray
+          muted: "#555555", // Still dark enough for contrast
+          disabled: "#777777", // For disabled text
+          inverse: {
+            DEFAULT: "#FFFFFF", // White text for dark backgrounds
+            muted: "#DDDDDD", // Slightly muted white
+          }
         }
       },
       fontFamily: {

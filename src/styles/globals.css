@@ -10,7 +10,7 @@
   }
   
   body {
-    @apply font-inter bg-neutral-light text-neutral-dark dark:bg-dark-bg dark:text-dark-text;
+    @apply font-inter bg-neutral-light text-text-primary dark:bg-dark-bg dark:text-white;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -44,45 +44,30 @@
     @apply bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100 dark:border-dark-highlight;
   }
 
-  /* Text contrast styles with direct color values */
-  .card p {
-    color: #000 !important;
-  }
-  
-  .dark .card p {
-    color: #fff !important;
-  }
-
+  /* Semantic text classes */
   .text-heading {
-    color: #000 !important;
-  }
-  
-  .dark .text-heading {
-    color: #fff !important;
+    @apply text-text-primary dark:text-white;
   }
   
   .text-body {
-    color: #000 !important;
-  }
-  
-  .dark .text-body {
-    color: #fff !important;
+    @apply text-text-primary dark:text-white;
   }
   
   .text-muted {
-    color: rgba(0, 0, 0, 0.8) !important;
-  }
-  
-  .dark .text-muted {
-    color: rgba(255, 255, 255, 0.8) !important;
+    @apply text-text-secondary dark:text-white/80;
   }
   
   .text-ui-muted {
-    color: rgba(0, 0, 0, 0.7) !important;
+    @apply text-text-muted dark:text-white/70;
   }
-  
-  .dark .text-ui-muted {
-    color: rgba(255, 255, 255, 0.7) !important;
+
+  .text-disabled {
+    @apply text-text-disabled dark:text-dark-muted;
+  }
+
+  /* Default card text colors */
+  .card p {
+    @apply text-text-primary dark:text-white;
   }
 
   .emoji-bg {

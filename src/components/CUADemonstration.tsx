@@ -46,8 +46,8 @@ const CUADemonstration = () => {
     <div className="py-12 bg-neutral-light">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Computer Use Agent (CUA)</h2>
-          <p className="text-xl max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4" style={{color: 'black'}}>Computer Use Agent (CUA)</h2>
+          <p className="text-xl max-w-3xl mx-auto" style={{color: 'black'}}>
             The AI assistant can directly interact with your computer interface using OpenAI's Computer Use Agent technology.
           </p>
         </div>
@@ -68,8 +68,8 @@ const CUADemonstration = () => {
                   <div className={`text-white text-4xl p-6 rounded-full ${cuaSteps[step].color} mb-4`}>
                     {cuaSteps[step].icon}
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">{cuaSteps[step].title}</h3>
-                  <p className="max-w-md text-black dark:text-white">{cuaSteps[step].description}</p>
+                  <h3 className="text-2xl font-bold mb-2" style={{color: 'black'}}>{cuaSteps[step].title}</h3>
+                  <p className="max-w-md" style={{color: 'black'}}>{cuaSteps[step].description}</p>
                 </motion.div>
               </div>
             </div>
@@ -77,7 +77,7 @@ const CUADemonstration = () => {
           
           {/* CUA Loop diagram */}
           <div className="mt-12 flex justify-center">
-            <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-4">
+            <div className="flex justify-center items-center gap-4">
               {cuaSteps.map((cuaStep, index) => (
                 <React.Fragment key={index}>
                   <div 
@@ -97,66 +97,52 @@ const CUADemonstration = () => {
                   )}
                 </React.Fragment>
               ))}
+              {/* Loop back connector */}
               <motion.div 
-                className="hidden md:block h-1 w-12 bg-gray-300 ml-2"
+                className="hidden md:flex items-center gap-2"
                 animate={{ 
-                  backgroundColor: step === 3 ? cuaSteps[3].color : '#D1D5DB'
+                  opacity: step === 3 ? 1 : 0.5
                 }}
                 transition={{ duration: 0.3 }}
-              />
-              <motion.div 
-                className="hidden md:block h-16 w-1 bg-gray-300"
-                animate={{ 
-                  backgroundColor: step === 3 ? cuaSteps[3].color : '#D1D5DB'
-                }}
-                transition={{ duration: 0.3 }}
-              />
-              <motion.div 
-                className="hidden md:block h-1 w-12 bg-gray-300"
-                animate={{ 
-                  backgroundColor: step === 3 ? cuaSteps[3].color : '#D1D5DB'
-                }}
-                transition={{ duration: 0.3 }}
-              />
-              <motion.div 
-                className="hidden md:block h-16 w-1 bg-gray-300"
-                animate={{ 
-                  backgroundColor: step === 3 ? cuaSteps[3].color : '#D1D5DB'
-                }}
-                transition={{ duration: 0.3 }}
-              />
-              <motion.div 
-                className="hidden md:block h-1 w-56 bg-gray-300 -mt-16"
-                animate={{ 
-                  backgroundColor: step === 3 ? cuaSteps[3].color : '#D1D5DB'
-                }}
-                transition={{ duration: 0.3 }}
-              />
+              >
+                <svg width="70" height="50" viewBox="0 0 70 50" className="ml-2">
+                  <path 
+                    d="M 0,25 C 20,25 20,50 35,50 C 50,50 50,25 70,25" 
+                    fill="none"
+                    stroke={step === 3 ? cuaSteps[3].color.replace('bg-', 'rgb') : '#D1D5DB'}
+                    strokeWidth="2"
+                  />
+                  <polygon 
+                    points="70,25 65,20 65,30" 
+                    fill={step === 3 ? cuaSteps[3].color.replace('bg-', 'rgb') : '#D1D5DB'}
+                  />
+                </svg>
+              </motion.div>
             </div>
           </div>
         </div>
         
         <div className="mt-12 bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-bold mb-3 text-primary-blue">Security & Permissions</h3>
-          <p className="mb-4">
+          <p className="mb-4" style={{color: 'black'}}>
             The Computer Use Agent operates with strict user permissions. You maintain full control over:
           </p>
           <ul className="space-y-2">
             <li className="flex items-start">
               <span className="text-secondary-orange mr-2">•</span>
-              <span>Which applications the AI can access</span>
+              <span style={{color: 'black'}}>Which applications the AI can access</span>
             </li>
             <li className="flex items-start">
               <span className="text-secondary-orange mr-2">•</span>
-              <span>What actions the AI can perform</span>
+              <span style={{color: 'black'}}>What actions the AI can perform</span>
             </li>
             <li className="flex items-start">
               <span className="text-secondary-orange mr-2">•</span>
-              <span>When the AI can operate your computer</span>
+              <span style={{color: 'black'}}>When the AI can operate your computer</span>
             </li>
             <li className="flex items-start">
               <span className="text-secondary-orange mr-2">•</span>
-              <span>The ability to instantly revoke permissions</span>
+              <span style={{color: 'black'}}>The ability to instantly revoke permissions</span>
             </li>
           </ul>
         </div>

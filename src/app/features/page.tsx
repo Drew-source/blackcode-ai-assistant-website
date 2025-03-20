@@ -30,22 +30,22 @@ export default function FeaturesPage() {
               <div className="text-primary-teal text-4xl mb-4">
                 <FaPlug />
               </div>
-              <h2 className="text-2xl font-bold mb-4">Model Context Protocol (MCP)</h2>
-              <p className="mb-4" style={{color: '#000'}}>
+              <h2 className="text-2xl font-bold mb-4" style={{color: 'black'}}>Model Context Protocol (MCP)</h2>
+              <p className="mb-4" style={{color: 'black'}}>
                 MCPs are standardized connections between AI models and data sources/tools that expand the capabilities of the assistant.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span style={{color: '#000'}}>15+ specialized MCPs for different services</span>
+                  <span style={{color: 'black'}}>15+ specialized MCPs for different services</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span style={{color: '#000'}}>Secure access with configurable permissions</span>
+                  <span style={{color: 'black'}}>Secure access with configurable permissions</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span style={{color: '#000'}}>Standardized interface for all integrations</span>
+                  <span style={{color: 'black'}}>Standardized interface for all integrations</span>
                 </li>
               </ul>
               <div className="mt-6">
@@ -57,22 +57,22 @@ export default function FeaturesPage() {
               <div className="text-primary-teal text-4xl mb-4">
                 <FaRobot />
               </div>
-              <h2 className="text-2xl font-bold mb-4">Computer Use Agent (CUA)</h2>
-              <p className="mb-4">
+              <h2 className="text-2xl font-bold mb-4" style={{color: 'black'}}>Computer Use Agent (CUA)</h2>
+              <p className="mb-4" style={{color: 'black'}}>
                 The Computer Use Agent enables the AI to directly interact with your computer interface through observation and action.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Screen observation and understanding</span>
+                  <span style={{color: 'black'}}>Screen observation and understanding</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Mouse and keyboard control</span>
+                  <span style={{color: 'black'}}>Mouse and keyboard control</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Secure permission-based operation</span>
+                  <span style={{color: 'black'}}>Secure permission-based operation</span>
                 </li>
               </ul>
               <div className="mt-6">
@@ -84,22 +84,22 @@ export default function FeaturesPage() {
               <div className="text-primary-teal text-4xl mb-4">
                 <FaBrain />
               </div>
-              <h2 className="text-2xl font-bold mb-4">Multi-Provider AI</h2>
-              <p className="mb-4">
+              <h2 className="text-2xl font-bold mb-4" style={{color: 'black'}}>Multi-Provider AI</h2>
+              <p className="mb-4" style={{color: 'black'}}>
                 The assistant leverages multiple AI providers to combine their unique strengths for a comprehensive experience.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Anthropic (Claude) for conversation</span>
+                  <span style={{color: 'black'}}>Anthropic (Claude) for conversation</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>OpenAI (GPT) for computer vision and UI control</span>
+                  <span style={{color: 'black'}}>OpenAI (GPT) for computer vision and UI control</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>ElevenLabs for voice synthesis</span>
+                  <span style={{color: 'black'}}>ElevenLabs for voice synthesis</span>
                 </li>
               </ul>
               <div className="mt-6">
@@ -111,22 +111,22 @@ export default function FeaturesPage() {
               <div className="text-primary-teal text-4xl mb-4">
                 <FaMicrophone />
               </div>
-              <h2 className="text-2xl font-bold mb-4">Voice Interaction</h2>
-              <p className="mb-4">
+              <h2 className="text-2xl font-bold mb-4" style={{color: 'black'}}>Voice Interaction</h2>
+              <p className="mb-4" style={{color: 'black'}}>
                 Communicate naturally with the assistant through high-quality bidirectional voice capabilities.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>ElevenLabs powered voice synthesis</span>
+                  <span style={{color: 'black'}}>ElevenLabs powered voice synthesis</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Multiple voice options and customization</span>
+                  <span style={{color: 'black'}}>Multiple voice options and customization</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2">•</span>
-                  <span>Voice activity detection for hands-free use</span>
+                  <span style={{color: 'black'}}>Voice activity detection for hands-free use</span>
                 </li>
               </ul>
               <div className="mt-6">
