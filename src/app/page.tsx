@@ -76,7 +76,7 @@ export default function Home() {
             Key Capabilities 🚀
           </motion.h2>
           <motion.p
-            className="text-center text-lg mb-16 max-w-3xl mx-auto text-gray-900 dark:text-gray-100"
+            className="text-center text-lg mb-16 max-w-3xl mx-auto text-body"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -98,8 +98,8 @@ export default function Home() {
               <div className="emoji-bg bg-primary mb-4">
                 <FaPlug className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">Model Context Protocol</h3>
-              <p className="text-gray-800 dark:text-gray-100">
+              <h3 className="text-xl font-bold mb-3 text-heading">Model Context Protocol</h3>
+              <p className="text-body">
                 Connect AI to 15+ data sources and services with secure, standardized protocols. 🔌
               </p>
             </motion.div>
@@ -115,8 +115,8 @@ export default function Home() {
               <div className="emoji-bg bg-accent-purple mb-4">
                 <FaRobot className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">Computer Use Agent</h3>
-              <p className="text-gray-800 dark:text-gray-100">
+              <h3 className="text-xl font-bold mb-3 text-heading">Computer Use Agent</h3>
+              <p className="text-body">
                 Allow AI to control your computer interface with OpenAI's advanced CUA technology. 🖱️
               </p>
             </motion.div>
@@ -132,8 +132,8 @@ export default function Home() {
               <div className="emoji-bg bg-accent-green mb-4">
                 <FaBrain className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">Multi-Provider AI</h3>
-              <p className="text-gray-800 dark:text-gray-100">
+              <h3 className="text-xl font-bold mb-3 text-heading">Multi-Provider AI</h3>
+              <p className="text-body">
                 Leverage Claude, GPT, and ElevenLabs models for specialized capabilities. 🧠
               </p>
             </motion.div>
@@ -149,8 +149,8 @@ export default function Home() {
               <div className="emoji-bg bg-accent-pink mb-4">
                 <FaMicrophone className="text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-gray-100">Voice Interaction</h3>
-              <p className="text-gray-800 dark:text-gray-100">
+              <h3 className="text-xl font-bold mb-3 text-heading">Voice Interaction</h3>
+              <p className="text-body">
                 Communicate naturally with high-quality bidirectional voice capabilities. 🎙️
               </p>
             </motion.div>
@@ -173,7 +173,7 @@ export default function Home() {
               Model Context Protocol (MCP) 🔌
             </motion.h2>
             <motion.p 
-              className="text-xl max-w-3xl mx-auto text-gray-900 dark:text-gray-100"
+              className="text-xl max-w-3xl mx-auto text-body"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -201,11 +201,11 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Filesystem MCP</span>
+                    <span className="text-body">Filesystem MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Google Drive MCP</span>
+                    <span className="text-body">Google Drive MCP</span>
                   </li>
                 </ul>
               </div>
@@ -227,15 +227,15 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Gmail MCP</span>
+                    <span className="text-body">Gmail MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Google Calendar MCP</span>
+                    <span className="text-body">Google Calendar MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Time MCP</span>
+                    <span className="text-body">Time MCP</span>
                   </li>
                 </ul>
               </div>
@@ -257,15 +257,15 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Google Maps MCP</span>
+                    <span className="text-body">Google Maps MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Google Custom Search MCP</span>
+                    <span className="text-body">Google Custom Search MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Needle AI & Pinecone MCPs</span>
+                    <span className="text-body">Needle AI & Pinecone MCPs</span>
                   </li>
                 </ul>
               </div>
@@ -287,11 +287,11 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Playwright MCP</span>
+                    <span className="text-body">Playwright MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Windows CLI MCP</span>
+                    <span className="text-body">Windows CLI MCP</span>
                   </li>
                 </ul>
               </div>
@@ -313,11 +313,11 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">X/Twitter MCP</span>
+                    <span className="text-body">X/Twitter MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Spotify MCP</span>
+                    <span className="text-body">Spotify MCP</span>
                   </li>
                 </ul>
               </div>
@@ -339,11 +339,11 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">Sequential Thinking MCP</span>
+                    <span className="text-body">Sequential Thinking MCP</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2">•</span>
-                    <span className="text-gray-900 dark:text-gray-100">ElevenLabs MCP</span>
+                    <span className="text-body">ElevenLabs MCP</span>
                   </li>
                 </ul>
               </div>

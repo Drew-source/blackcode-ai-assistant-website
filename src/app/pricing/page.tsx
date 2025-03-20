@@ -116,9 +116,9 @@ export default function PricingPage() {
                         {feature.included ? (
                           <FaCheck className="text-green-500 mr-3 flex-shrink-0" />
                         ) : (
-                          <FaTimes className="light-text-fix mr-3 flex-shrink-0" />
+                          <FaTimes className="text-ui-muted mr-3 flex-shrink-0" />
                         )}
-                        <span className={feature.included ? 'text-gray-800' : 'light-text-fix'}>
+                        <span className={feature.included ? 'text-body' : 'text-ui-muted'}>
                           {feature.name}
                         </span>
                       </li>

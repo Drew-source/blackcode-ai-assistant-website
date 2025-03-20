@@ -44,32 +44,26 @@
     @apply bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100 dark:border-dark-highlight;
   }
 
-  /* Improved text contrast */
+  /* Text contrast styles */
+  /* Instead of overriding tailwind classes, create our own */
   .card p {
     @apply text-gray-800 dark:text-gray-100;
   }
 
-  .card .dark\:text-dark-text {
-    @apply dark:text-gray-100;
-  }
-  
-  .card .dark\:text-dark-muted {
-    @apply dark:text-gray-200;
-  }
-
-  /* Improved contrast for all gray text */
-  .text-gray-600 {
-    @apply text-gray-800 dark:text-gray-200;
-  }
-  
-  .text-gray-700 {
+  .text-heading {
     @apply text-gray-900 dark:text-gray-100;
   }
   
-  /* Fix for circular dependency */
-  /* Instead of directly overriding the classes that create circular references */
-  .light-text-fix {
-    @apply text-gray-600 dark:text-gray-200;
+  .text-body {
+    @apply text-gray-800 dark:text-gray-100;
+  }
+  
+  .text-muted {
+    @apply text-gray-700 dark:text-gray-200;
+  }
+  
+  .text-ui-muted {
+    @apply text-gray-600 dark:text-gray-300;
   }
 
   .emoji-bg {

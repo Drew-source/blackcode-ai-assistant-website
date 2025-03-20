@@ -168,33 +168,33 @@ export default function MCPsPage() {
       </section>
 
       {/* MCP Explanation Section */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white dark:bg-dark-bg">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">What is an MCP?</h2>
-            <p className="text-lg mb-6">
+            <h2 className="text-3xl font-bold mb-6 text-heading">What is an MCP?</h2>
+            <p className="text-lg mb-6 text-body">
               Model Context Protocols (MCPs) are standardized connections between AI models and various 
               data sources or tools. They allow the Windows AI Assistant to safely and securely 
               interact with files, applications, web services, and other resources.
             </p>
-            <div className="bg-neutral-light p-6 rounded-lg mb-8">
-              <h3 className="text-xl font-bold mb-3">Key Benefits:</h3>
+            <div className="bg-neutral-light dark:bg-dark-highlight p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-3 text-heading">Key Benefits:</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2 font-bold">•</span>
-                  <span><strong>Enhanced Capabilities:</strong> Extends what the AI can do beyond conversation</span>
+                  <span className="text-body"><strong>Enhanced Capabilities:</strong> Extends what the AI can do beyond conversation</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2 font-bold">•</span>
-                  <span><strong>Secure Access:</strong> Granular permissions for each integration</span>
+                  <span className="text-body"><strong>Secure Access:</strong> Granular permissions for each integration</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2 font-bold">•</span>
-                  <span><strong>Standardized Interface:</strong> Consistent interaction patterns</span>
+                  <span className="text-body"><strong>Standardized Interface:</strong> Consistent interaction patterns</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary-orange mr-2 font-bold">•</span>
-                  <span><strong>User Control:</strong> Enable or disable MCPs as needed</span>
+                  <span className="text-body"><strong>User Control:</strong> Enable or disable MCPs as needed</span>
                 </li>
               </ul>
             </div>
@@ -203,9 +203,9 @@ export default function MCPsPage() {
       </section>
 
       {/* MCP Directory */}
-      <section className="py-16 bg-neutral-light">
+      <section className="py-16 bg-neutral-light dark:bg-dark-bg">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">MCP Directory</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-heading">MCP Directory</h2>
           
           <div className="space-y-16">
             {mcpCategories.map((category, categoryIndex) => (
@@ -215,8 +215,8 @@ export default function MCPsPage() {
                     {category.icon}
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold">{category.name}</h3>
-                    <p className="text-gray-600">{category.description}</p>
+                    <h3 className="text-2xl font-bold text-heading">{category.name}</h3>
+                    <p className="text-body">{category.description}</p>
                   </div>
                 </div>
                 
@@ -225,15 +225,17 @@ export default function MCPsPage() {
                     <Link 
                       href={`/mcps/${mcp.id}`} 
                       key={mcpIndex}
-                      className="bg-white rounded-lg shadow-md p-6 transition-transform hover:scale-105"
+                      className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 transition-transform hover:scale-105"
                     >
                       <div className="flex items-start gap-4">
                         <div className={`w-10 h-10 rounded-full ${category.color} flex items-center justify-center mt-1`}>
-                          {mcp.icon}
+                          <div className="text-white">
+                            {mcp.icon}
+                          </div>
                         </div>
                         <div>
-                          <h4 className="text-lg font-bold mb-2">{mcp.name}</h4>
-                          <p className="text-gray-600 text-sm">{mcp.description}</p>
+                          <h4 className="text-lg font-bold mb-2 text-heading">{mcp.name}</h4>
+                          <p className="text-muted">{mcp.description}</p>
                         </div>
                       </div>
                     </Link>
@@ -246,61 +248,87 @@ export default function MCPsPage() {
       </section>
       
       {/* Integration Diagram */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-dark-bg">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-8 text-center">How MCPs Connect</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-heading">How MCPs Work</h2>
           
-          <div className="max-w-4xl mx-auto bg-neutral-light p-8 rounded-lg">
-            <div className="flex flex-col items-center">
-              <div className="bg-primary-blue text-white rounded-full w-24 h-24 flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold">AI Model</span>
-              </div>
-              
-              <div className="h-16 w-1 bg-secondary-orange"></div>
-              
-              <div className="bg-neutral-dark text-white rounded-full w-24 h-24 flex items-center justify-center my-4">
-                <span className="text-2xl font-bold">MCPs</span>
-              </div>
-              
-              <div className="grid grid-cols-3 gap-8 mt-8">
-                <div className="flex flex-col items-center">
-                  <div className="h-16 w-1 bg-secondary-orange mb-4"></div>
-                  <div className="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
-                    <FaFolder size={24} />
+          <div className="max-w-4xl mx-auto">
+            {/* Simplified architecture diagram */}
+            <div className="relative py-10">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="flex flex-col items-center mb-8 md:mb-0 md:mr-4">
+                  <div className="bg-primary text-white rounded-lg p-4 shadow-md mb-2 w-48">
+                    <h4 className="font-bold text-center">AI Assistant</h4>
                   </div>
-                  <p className="mt-2 text-center font-medium">Files</p>
                 </div>
                 
-                <div className="flex flex-col items-center">
-                  <div className="h-16 w-1 bg-secondary-orange mb-4"></div>
-                  <div className="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
-                    <FaGlobe size={24} />
+                <div className="hidden md:block w-16 h-0.5 bg-gray-300 dark:bg-gray-700"></div>
+                
+                <div className="flex flex-col items-center mb-8 md:mb-0 md:mx-4">
+                  <div className="bg-secondary-orange text-white rounded-lg p-4 shadow-md mb-2 w-48">
+                    <h4 className="font-bold text-center">MCP Controller</h4>
                   </div>
-                  <p className="mt-2 text-center font-medium">Web</p>
                 </div>
                 
-                <div className="flex flex-col items-center">
-                  <div className="h-16 w-1 bg-secondary-orange mb-4"></div>
-                  <div className="bg-purple-500 text-white rounded-full w-16 h-16 flex items-center justify-center">
-                    <FaDatabase size={24} />
+                <div className="hidden md:block w-16 h-0.5 bg-gray-300 dark:bg-gray-700"></div>
+                
+                <div className="flex flex-col items-center md:ml-4">
+                  <div className="bg-accent-purple text-white rounded-lg p-4 shadow-md mb-2 w-48">
+                    <h4 className="font-bold text-center">External Services</h4>
                   </div>
-                  <p className="mt-2 text-center font-medium">Services</p>
                 </div>
               </div>
+            </div>
+            
+            {/* Work flow description */}
+            <div className="mt-12 bg-neutral-light dark:bg-dark-highlight p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4 text-heading">MCP Workflow:</h3>
+              <ol className="space-y-4">
+                <li className="flex items-start">
+                  <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                  <span className="text-body">
+                    <strong>Request:</strong> The AI assistant requests specific data or functionality through an MCP
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                  <span className="text-body">
+                    <strong>Permission Check:</strong> MCP Controller verifies the operation is permitted by user settings
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                  <span className="text-body">
+                    <strong>Authentication:</strong> Secure authentication with the external service is handled
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">4</span>
+                  <span className="text-body">
+                    <strong>Execution:</strong> The requested operation is performed on the external service
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">5</span>
+                  <span className="text-body">
+                    <strong>Response:</strong> Data is returned to the AI in a standardized format
+                  </span>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="bg-secondary-orange text-white py-16">
+      {/* Developer Call to Action */}
+      <section className="py-16 bg-gradient-to-r from-primary to-accent-purple text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to explore MCPs?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Download the Windows AI Assistant and unlock the full potential of AI integration.
+          <h2 className="text-3xl font-bold mb-6">Build Your Own MCP</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">
+            Interested in extending Windows AI Assistant with custom integrations? Access our developer documentation to build your own MCPs.
           </p>
-          <a href="/download" className="bg-white text-secondary-orange font-bold py-3 px-8 rounded-md hover:bg-opacity-90 transition duration-200">
-            Download Now
+          <a href="/docs/mcp-development" className="bg-white text-primary font-bold py-3 px-8 rounded-md hover:bg-opacity-90 transition duration-200">
+            Developer Documentation
           </a>
         </div>
       </section>
